@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18752A312640904F00C50A50 /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A2F2640904F00C50A50 /* robot.usdz */; };
+		18752A322640904F00C50A50 /* tv.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A302640904F00C50A50 /* tv.usdz */; };
+		18752A392640917000C50A50 /* flower.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A332640916D00C50A50 /* flower.usdz */; };
+		18752A3A2640917000C50A50 /* biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A342640916D00C50A50 /* biplane.usdz */; };
+		18752A3B2640917000C50A50 /* car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A352640916E00C50A50 /* car.usdz */; };
+		18752A3C2640917000C50A50 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A362640916E00C50A50 /* gramophone.usdz */; };
+		18752A3D2640917000C50A50 /* drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A372640916F00C50A50 /* drummer.usdz */; };
+		18752A3E2640917000C50A50 /* chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A382640917000C50A50 /* chair.usdz */; };
+		18752A402640921900C50A50 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A3F2640921900C50A50 /* teapot.usdz */; };
+		18752A4226409B2400C50A50 /* ConfirmCancelButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18752A4126409B2400C50A50 /* ConfirmCancelButtons.swift */; };
+		18752A4426409B4B00C50A50 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18752A4326409B4B00C50A50 /* ModelPickerView.swift */; };
 		18FEF9AF2638933B00024EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FEF9AE2638933B00024EE3 /* AppDelegate.swift */; };
 		18FEF9B12638933B00024EE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FEF9B02638933B00024EE3 /* ContentView.swift */; };
 		18FEF9B32638933B00024EE3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 18FEF9B22638933B00024EE3 /* Experience.rcproject */; };
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18752A2F2640904F00C50A50 /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
+		18752A302640904F00C50A50 /* tv.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv.usdz; sourceTree = "<group>"; };
+		18752A332640916D00C50A50 /* flower.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower.usdz; sourceTree = "<group>"; };
+		18752A342640916D00C50A50 /* biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = biplane.usdz; sourceTree = "<group>"; };
+		18752A352640916E00C50A50 /* car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = car.usdz; sourceTree = "<group>"; };
+		18752A362640916E00C50A50 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		18752A372640916F00C50A50 /* drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = drummer.usdz; sourceTree = "<group>"; };
+		18752A382640917000C50A50 /* chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair.usdz; sourceTree = "<group>"; };
+		18752A3F2640921900C50A50 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		18752A4126409B2400C50A50 /* ConfirmCancelButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCancelButtons.swift; sourceTree = "<group>"; };
+		18752A4326409B4B00C50A50 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		18FEF9AB2638933B00024EE3 /* MatchingGameAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingGameAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FEF9AE2638933B00024EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FEF9B02638933B00024EE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18752A2A26408D5800C50A50 /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+				18752A342640916D00C50A50 /* biplane.usdz */,
+				18752A352640916E00C50A50 /* car.usdz */,
+				18752A382640917000C50A50 /* chair.usdz */,
+				18752A372640916F00C50A50 /* drummer.usdz */,
+				18752A332640916D00C50A50 /* flower.usdz */,
+				18752A362640916E00C50A50 /* gramophone.usdz */,
+				18752A2F2640904F00C50A50 /* robot.usdz */,
+				18752A3F2640921900C50A50 /* teapot.usdz */,
+				18752A302640904F00C50A50 /* tv.usdz */,
+			);
+			path = 3DModels;
+			sourceTree = "<group>";
+		};
 		18FEF9A22638933B00024EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +137,11 @@
 		18FEF9AD2638933B00024EE3 /* MatchingGameAR */ = {
 			isa = PBXGroup;
 			children = (
+				18752A2A26408D5800C50A50 /* 3DModels */,
 				18FEF9AE2638933B00024EE3 /* AppDelegate.swift */,
 				18FEF9B02638933B00024EE3 /* ContentView.swift */,
+				18752A4326409B4B00C50A50 /* ModelPickerView.swift */,
+				18752A4126409B2400C50A50 /* ConfirmCancelButtons.swift */,
 				18FEF9B22638933B00024EE3 /* Experience.rcproject */,
 				18FEF9B42638933B00024EE3 /* Assets.xcassets */,
 				18FEF9B92638933B00024EE3 /* LaunchScreen.storyboard */,
@@ -239,9 +280,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18752A402640921900C50A50 /* teapot.usdz in Resources */,
 				18FEF9BB2638933B00024EE3 /* LaunchScreen.storyboard in Resources */,
+				18752A3C2640917000C50A50 /* gramophone.usdz in Resources */,
+				18752A3B2640917000C50A50 /* car.usdz in Resources */,
+				18752A3E2640917000C50A50 /* chair.usdz in Resources */,
+				18752A322640904F00C50A50 /* tv.usdz in Resources */,
 				18FEF9B82638933B00024EE3 /* Preview Assets.xcassets in Resources */,
+				18752A3D2640917000C50A50 /* drummer.usdz in Resources */,
+				18752A392640917000C50A50 /* flower.usdz in Resources */,
+				18752A312640904F00C50A50 /* robot.usdz in Resources */,
 				18FEF9B52638933B00024EE3 /* Assets.xcassets in Resources */,
+				18752A3A2640917000C50A50 /* biplane.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18752A4426409B4B00C50A50 /* ModelPickerView.swift in Sources */,
+				18752A4226409B2400C50A50 /* ConfirmCancelButtons.swift in Sources */,
 				18FEF9B12638933B00024EE3 /* ContentView.swift in Sources */,
 				18FEF9AF2638933B00024EE3 /* AppDelegate.swift in Sources */,
 				18FEF9B32638933B00024EE3 /* Experience.rcproject in Sources */,
@@ -441,6 +493,7 @@
 				DEVELOPMENT_TEAM = 4Q332864D3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MatchingGameAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +515,7 @@
 				DEVELOPMENT_TEAM = 4Q332864D3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MatchingGameAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
