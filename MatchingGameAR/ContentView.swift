@@ -8,6 +8,7 @@ import ARKit
 import SwiftUI
 import RealityKit
 
+
 struct ContentView : View {
 
 	// Dynamically get model name from bundle.
@@ -24,29 +25,30 @@ struct ContentView : View {
 		}
 		return availableModels
 	}()
+
 	@State private var selectionConfirmed = false
 	@State private var selectedModel: String? = nil
 
     var body: some View {
 		ZStack(alignment: .bottom) {
-			ARViewContainer()
+			ARViewContainer(modelAddedToScene: $selectedModel)
 			VStack {
-				ConfirmCancelButtons(selectionConfirmed: $selectionConfirmed)
+//				ConfirmCancelButtons(selectionConfirmed: $selectionConfirmed)
 				ModelPickerView(models: appModels, selectedModel: $selectedModel)
 			}
 		}
 		.edgesIgnoringSafeArea(.all)
     }
 
-	private func loadModel(_ arView: ARView, with name: String) {
-		arView.scene.addAnchor(<#T##anchor: HasAnchoring##HasAnchoring#>)
-	}
 
 }
 
 struct ARViewContainer: UIViewRepresentable {
+	@Binding var modelAddedToScene: String?
+
+	let arView = ARView(frame: .zero)
+
     func makeUIView(context: Context) -> ARView {
-		let arView = ARView(frame: .zero)
 
 		let configuration = ARWorldTrackingConfiguration()
 		configuration.planeDetection = .horizontal
@@ -57,20 +59,30 @@ struct ARViewContainer: UIViewRepresentable {
 			configuration.sceneReconstruction = .mesh
 		}
 
-
-
-		#warning("Look up how to configure the session for a RealityKit built ARApp.")
-		// you'll need arView.session.run(configuration)
-        
         // Load the "Box" scene from the "Experience" Reality File
-//        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! Experience.loadBox()
         
         // Add the box anchor to the scene
-//        arView.scene.anchors.append(boxAnchor)
+        arView.scene.anchors.append(boxAnchor)
         return arView
     }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
+
+    func updateUIView(_ uiView: ARView, context: Context) {
+		#warning("This is only running once and I need it, or something, to get called with each tap gesture.")
+		let recognizer = UITapGestureRecognizer()
+		let point = recognizer.location(in: uiView)
+
+		guard let rayCastQuery = uiView.makeRaycastQuery(from: point, allowing: .existingPlaneInfinite, alignment: .horizontal) else { return }
+		let result = uiView.raycast(from: point, allowing: .existingPlaneInfinite, alignment: rayCastQuery.targetAlignment)
+
+		if let modelName = modelAddedToScene {
+			let fileName = modelName + ".usdz"
+			let modelEntity = try! ModelEntity.loadModel(named: fileName)
+			let anchor = AnchorEntity(raycastResult: result.first!)
+			anchor.addChild(modelEntity)
+			uiView.scene.anchors.append(anchor)
+		}
+	}
 
 
     

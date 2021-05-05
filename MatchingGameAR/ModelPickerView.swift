@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ModelPickerView: View {
-	// TODO: need a binding here to get the name of the model selected.
 	var models: [String]
 
 	@Binding var selectedModel: String?

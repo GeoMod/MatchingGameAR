@@ -10,7 +10,7 @@
 		18752A312640904F00C50A50 /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A2F2640904F00C50A50 /* robot.usdz */; };
 		18752A322640904F00C50A50 /* tv.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A302640904F00C50A50 /* tv.usdz */; };
 		18752A392640917000C50A50 /* flower.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A332640916D00C50A50 /* flower.usdz */; };
-		18752A3A2640917000C50A50 /* biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A342640916D00C50A50 /* biplane.usdz */; };
+		18752A3A2640917000C50A50 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A342640916D00C50A50 /* toy_biplane.usdz */; };
 		18752A3B2640917000C50A50 /* car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A352640916E00C50A50 /* car.usdz */; };
 		18752A3C2640917000C50A50 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A362640916E00C50A50 /* gramophone.usdz */; };
 		18752A3D2640917000C50A50 /* drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18752A372640916F00C50A50 /* drummer.usdz */; };
@@ -49,7 +49,7 @@
 		18752A2F2640904F00C50A50 /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
 		18752A302640904F00C50A50 /* tv.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv.usdz; sourceTree = "<group>"; };
 		18752A332640916D00C50A50 /* flower.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower.usdz; sourceTree = "<group>"; };
-		18752A342640916D00C50A50 /* biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = biplane.usdz; sourceTree = "<group>"; };
+		18752A342640916D00C50A50 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		18752A352640916E00C50A50 /* car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = car.usdz; sourceTree = "<group>"; };
 		18752A362640916E00C50A50 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		18752A372640916F00C50A50 /* drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = drummer.usdz; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		18752A2A26408D5800C50A50 /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
-				18752A342640916D00C50A50 /* biplane.usdz */,
+				18752A342640916D00C50A50 /* toy_biplane.usdz */,
 				18752A352640916E00C50A50 /* car.usdz */,
 				18752A382640917000C50A50 /* chair.usdz */,
 				18752A372640916F00C50A50 /* drummer.usdz */,
@@ -291,7 +291,7 @@
 				18752A392640917000C50A50 /* flower.usdz in Resources */,
 				18752A312640904F00C50A50 /* robot.usdz in Resources */,
 				18FEF9B52638933B00024EE3 /* Assets.xcassets in Resources */,
-				18752A3A2640917000C50A50 /* biplane.usdz in Resources */,
+				18752A3A2640917000C50A50 /* toy_biplane.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
